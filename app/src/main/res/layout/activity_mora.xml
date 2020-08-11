@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoraActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Mora "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:text="Paper"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/scissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Scissors"
+        app:layout_constraintStart_toStartOf="@+id/paper"
+        app:layout_constraintTop_toBottomOf="@+id/paper" />
+
+    <Button
+        android:id="@+id/rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Rock"
+        app:layout_constraintStart_toStartOf="@+id/scissors"
+        app:layout_constraintTop_toBottomOf="@+id/scissors" />
+
+    <TextView
+        android:id="@+id/mora_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Result : "
+        app:layout_constraintStart_toStartOf="@+id/rock"
+        app:layout_constraintTop_toBottomOf="@+id/rock" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="28dp"
+        android:text="Computer choose :"
+        app:layout_constraintStart_toEndOf="@+id/paper"
+        app:layout_constraintTop_toTopOf="@+id/paper" />
+
+    <ImageView
+        android:id="@+id/chooseImage"
+        android:layout_width="149dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/scissors"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/ic_dialog_close_light" />
+</androidx.constraintlayout.widget.ConstraintLayout>
